@@ -82,8 +82,9 @@ class ProcessManager(QObject):
 
         pid: int | None = self.umu_manager.start(account)
 
-        if pid and self._is_d2r_started(pid):
-            self._rename_window_title(pid, account)
+        #if pid and self._is_d2r_started(pid):
+        #    self._rename_window_title(pid, account)
+        # no need for that and wmctrl only gets defunct on hyprland
 
         return None, account, pid
 
