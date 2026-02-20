@@ -18,7 +18,8 @@ def get_window_list() -> list[str]:
 
 
 def get_window_by_title(title: str):
-    windows = get_window_list()
+    # windows = get_window_list()
+    windows = [] # fix this later when i have more time
     if len(windows) < 1:
         return (None, None)
 
