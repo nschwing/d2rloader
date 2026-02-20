@@ -1,6 +1,7 @@
 name: Release - Build PyInstaller Package and AppImage
 
 on:
+  workflow_dispatch:
   push:
     tags:
       - "v*"
